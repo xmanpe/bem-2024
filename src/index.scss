@@ -1,0 +1,61 @@
+@keyframes fadeInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+  
+@keyframes fadeOutFromTop {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(50px);
+        filter: blur(16px);
+    }
+}
+
+// colors variables
+$dark-blue-color: #114D7E;
+$default-blue-color: #2172B0;
+$light-blue-color: #5AA6DD;
+$yellow-color: #FCB369;
+$orange-color: #F77B55;
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        img, div {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; 
+        }
+
+        h1, h2, h3, h4, h5, h6, p, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    }
+}
