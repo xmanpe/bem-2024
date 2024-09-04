@@ -14,7 +14,7 @@ import balance from '../../images/element/balance.svg';
 const TaglineHome = () => {
     return (
         <section className="tagline-home_section">
-            <h2>Commit. Solid. Integrated</h2>
+            <h2><span>#</span>TogetherWeImproveBetter</h2>
             <div className="element-wrapper">
                 <img src={focus} alt="focus" />
                 <img src={innovate} alt="innovate" />
