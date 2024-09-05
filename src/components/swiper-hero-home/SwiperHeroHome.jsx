@@ -69,21 +69,6 @@ const SwiperHeroHome = () => {
                     </SwiperSlide>
                 </Swiper>
             </div>
-            
-            {/* <div className="image-wrapper">
-                <div className="each-image">
-                    <img src={kevin} alt="kevin" />
-                </div>
-                <div className="each-image">
-                    <img src={kevin} alt="kevin" />
-                </div>
-                <div className="each-image">
-                    <img src={kevin} alt="kevin" />
-                </div>
-                <div className="each-image">
-                    <img src={kevin} alt="kevin" />
-                </div>
-            </div> */}
             <img className="s-bottom" src={substract} alt="substract" />
         </div>
     );

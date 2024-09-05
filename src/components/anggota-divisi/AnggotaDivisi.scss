@@ -46,5 +46,159 @@
                 line-height: 160%;
             }
         }
+
+        .image-wrapper {
+            width: 100%;
+            border-radius: 8px;
+
+            .swiper {
+                border-radius: 8px;
+                position: relative;
+
+                .swiper-wrapper {
+                    display: flex;
+                    border-radius: 8px;
+                    overflow: visible;
+    
+                    .swiper-slide {
+                        display: flex;
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+                        border-radius: 8px;
+                        box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            border: 4px solid rgba(255, 255, 255, 0.4);
+                            border-radius: 8px;
+                            transition: all 0.3s ease;
+                        }
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .swiper-pagination {
+                    position: absolute;    
+
+                    .swiper-pagination-bullet {
+                      background: #FFF;
+                      opacity: 0.3;
+                      width: 8px;
+                      height: 8px;
+                      border-radius: 50%;
+                      transition: all 0.3s ease-in-out;
+                    }
+                
+                    .swiper-pagination-bullet-active {
+                      background: #FFF;
+                      opacity: 1;
+                      width: 32px;
+                      height: 8px;
+                      border-radius: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.60);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 160%;
+            text-align: center;
+
+            span {
+                color: var(--Light-blue, #5AA6DD);
+            }
+        }
+    }
+
+    .bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+
+        .each-person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+
+            .image-person {
+                aspect-ratio: 1/1;
+                border-radius: 8px;
+                overflow: hidden;
+                position: relative;
+                box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.10);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border: 4px solid rgba(255, 255, 255, 0.4);
+                    border-radius: 8px;
+                    transition: all 0.3s ease;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .title-person {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                width: 100%;
+
+                h1 {
+                    color: #000;
+                    text-align: center;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                p {
+                    color: rgba(0, 0, 0, 0.60);
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+        }
     }
 }

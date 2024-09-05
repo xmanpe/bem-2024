@@ -1,8 +1,16 @@
 import React from "react";
 import './AnggotaDivisi.scss';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel } from 'swiper/modules';
+
+// import swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 // import images
 import fotoTest from '../../images/foto-divisi/bph/foto-1.png';
+import fotoTest2 from '../../images/foto-divisi/bph/foto-2.png';
+
 import sherly from '../../images/foto-divisi/bph/member/sherly.png';
 import vidy from '../../images/foto-divisi/bph/member/vidy.png';
 import nicholas from '../../images/foto-divisi/bph/member/nicholas.png';
@@ -20,7 +28,28 @@ const AnggotaDivisi = () => {
                     <p>Badan Pengurus Harian</p>
                 </div>
                 <div className="image-wrapper">
-                    <img src={fotoTest} alt="foto" />
+                    <Swiper
+                        spaceBetween={16}
+                        modules={[Navigation, Autoplay, A11y, Mousewheel, Pagination]}
+                        slidesPerView={1}
+                        scrollbar={{ draggable: true }}
+                        mousewheel={false}
+                        loop={true}
+                        pagination={{ clickable: true }}
+                        autoplay={{
+                            delay: 3000,
+                            disableOnInteraction: false,
+                            pauseOnMouseEnter: false,
+                        }}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <img src={fotoTest} alt="foto" />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img src={fotoTest2} alt="foto" />
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
             <div className="middle">
