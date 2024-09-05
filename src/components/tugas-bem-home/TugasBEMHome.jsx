@@ -65,7 +65,7 @@ const TugasBEMHome = () => {
                     </div>
                 </div>
                 <div className="each-tugas">
-                    <p>Kedua, BEM UMN bertugas menaungi beberapa kegiatan mahasiswa. </p>
+                    <p>Kedua, BEM UMN bertugas menaungi 6 kegiatan besar mahasiswa. </p>
                     <div className="card-wrapper grid">
                         <div className="each-card">
                             <div className="card-image square">

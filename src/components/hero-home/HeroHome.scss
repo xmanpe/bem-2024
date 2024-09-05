@@ -5,6 +5,8 @@
     padding: 160px 0px 60px 0px;
     gap: 40px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #ffffff 100%), url('../../images/vector/bem\ decor.svg') rgb(255, 255, 255) 0% / cover no-repeat;
+    position: relative;
+    box-sizing: border-box;
 
     .hero-home-title {
         box-sizing: border-box;
