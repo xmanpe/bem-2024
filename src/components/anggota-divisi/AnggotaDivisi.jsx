@@ -73,7 +73,6 @@ const AnggotaDivisi = ({ activeTab }) => {
                     <p className="description" dangerouslySetInnerHTML={{ __html: division.description }}></p>
                 </div>
 
-                {/* Additional content for SUFAK and SUKM */}
                 {renderAdditionalContent()}
 
                 <div className="bottom">

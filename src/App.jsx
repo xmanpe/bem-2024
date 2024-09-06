@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 // import components
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
 
 // import images
 import fadeBottom from './images/vector/fade-bottom.svg';
@@ -20,8 +21,9 @@ const App = () => {
           <Route path="/anggota" element={<Anggota />} />
         </Routes>
         <Navbar />
+        {/* <Footer /> */}
       </Router>
-      <img
+      {/* <img
         src={fadeBottom} 
         alt="fade-bottom" 
         className="fade-bottom" 
@@ -34,7 +36,7 @@ const App = () => {
           zIndex: 10,
           pointerEvents: 'none',
         }}
-      />
+      /> */}
     </div>
   );
 }

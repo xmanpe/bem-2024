@@ -194,5 +194,104 @@
             }
         }
     }
+}
 
+@media screen and (max-width: 820px) {
+    .tugas-bem-home_section {
+        padding: 40px 16px;
+        gap: 20px;
+    
+        h1 {
+            font-size: 28px;
+        }
+    
+        .tugas-wrapper {
+            .each-tugas {
+                gap: 12px;
+    
+                &::before {
+                }
+    
+                &:hover {
+                    border-left: 2px solid #F0F0F0;
+    
+                    &::before {
+                        background-color: #F0F0F0;
+                    }
+                }
+    
+                p {
+                    font-size: 16px;
+                }
+    
+                .card-wrapper {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px 8px;
+    
+                    .each-card {
+                        .card-image {    
+                            &:hover {
+                                border: none;
+                            }
+    
+                            img {
+                            }
+                        }
+    
+                        .square {
+                            &::before {
+                            }
+    
+                            .absolute-image {
+                            }
+    
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                transition: all 0.3s ease;
+                            }
+                        }
+    
+                        .square:hover {
+                            border: none;
+                            
+                            &::before {
+                                border: none;
+                            }
+    
+                            .absolute-image {
+                                opacity: 0.3;
+                            }
+    
+                            img {
+                                width: 101%;
+                                height: 100%;
+                            }
+                        }
+    
+                        .card-link {
+                            gap: 20px;
+    
+                            p {
+                                font-size: 14px;
+                            }
+    
+                            img {
+                                width: 20px;
+                                height: 20px;
+                            }
+    
+                            .card-text {
+                                .supervisor {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

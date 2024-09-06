@@ -11,7 +11,13 @@ const Anggota = () => {
 
     return (
         <section className="page-anggota">
-            <Header activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
+            <Header 
+                activeTab={activeTab} 
+                setActiveTab={setActiveTab} 
+                tabs={tabs} 
+                
+                title={'Anggota BEM GEN XIV'}   
+            />
             <AnggotaDivisi activeTab={activeTab} />
         </section>
     );

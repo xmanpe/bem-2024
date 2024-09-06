@@ -101,3 +101,61 @@
         }
     }
 }
+
+@media screen and (max-width: 820px) {
+    .quote-home_section {
+        padding: 40px 16px 40px 16px;
+    
+        .quote-wrapper {
+            flex-direction: column;
+            gap: 16px;
+    
+            .each-quote {
+                padding: 20px;
+                gap: 16px;
+    
+                &:hover {
+                    transform: scaleX(1.0);
+                    box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+                }
+    
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+    
+                .quote-text {
+                    gap: 20px;
+    
+                    p {
+                        font-size: 14px;
+                    }
+    
+                    .quote-person {
+                        gap: 8px;
+    
+                        .quote-image {
+                            width: 40px;
+                            height: 40px;
+    
+                            img {
+                                width: 120%;
+                                height: 120%;
+                            }
+                        }
+    
+                        .status {
+                            .person-name {
+                                font-size: 14px;
+                            }
+    
+                            .person-jabatan {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

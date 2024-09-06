@@ -28,7 +28,7 @@ export const DivisiData = {
     BPH: {
         title: "BPH",
         subtitle: "Badan Pengurus Harian",
-        description: "<span>BPH</span>, merupakan divisi yang bertanggung jawab dalam melakukan koordinasi...",
+        description: "<span>Badan Pengurus Harian</span>, merupakan divisi yang bertanggung jawab dalam melakukan koordinasi terkait program kerja, mengawasi kinerja dari masing-masing anggota divisi, serta bertugas dalam pengelolaan keuangan serta hal administratif BEM UMN.",
         images: [fotobph, fotobph2],
         element: elementBPH,
         members: [
@@ -41,22 +41,22 @@ export const DivisiData = {
     SUKMA: {
         title: "SUKMA",
         subtitle: "Supervisor Kegiatan Mahasiswa",
-        description: "<span>SUKMA</span>, merupakan divisi yang bertanggung jawab dalam pengawasan kegiatan mahasiswa...",
+        description: "<span>Supervisor Kegiatan Mahasiswa</span>, bertanggung jawab dalam mengawasi masing-masing Kegiatan Mahasiswa yang dinaungi agar dapat terlaksana sesuai dengan tujuan kegiatannya. SUKMA juga berperan aktif untuk memastikan kinerja dari setiap BPH yang terlibat langsung dalam Kegiatan Mahasiswa agar alur kerja yang terbentuk dapat berjalan dengan baik.",
         images: [fotosukma, fotosukma2],
         element: elementSUKMA,
         members: [
-            { name: "Alsonsus Given", role: "Supervisor UMN Festival 2024", image: alfon },
-            { name: "Katheen Tandi", role: "Supervisor Mr. & Ms. UMN 2024", image: kathleen },
-            { name: "Khanza Azzahra", role: "Supervisor UMN ECO 2024", image: putrida },
-            { name: "Ralph Theodoric", role: "Supervisor OMB UMN 2024", image: ralph },
-            { name: "Rapha Zakharia", role: "Supervisor Starlight UMN 2024", image: rapha },
-            { name: "Steven Fernando", role: "Supervisor MAXIMA 2024", image: steven },
+            { name: "Alsonsus Given", role: "Spv. UMN Festival 2024", image: alfon },
+            { name: "Katheen Tandi", role: "Spv. Mr. & Ms. UMN 2024", image: kathleen },
+            { name: "Khanza Azzahra", role: "Spv. UMN ECO 2024", image: putrida },
+            { name: "Ralph Theodoric", role: "Spv. OMB UMN 2024", image: ralph },
+            { name: "Rapha Zakharia", role: "Spv. Starlight UMN 2024", image: rapha },
+            { name: "Steven Fernando", role: "Spv. MAXIMA 2024", image: steven },
         ],
     },
     PR: {
         title: "PR",
         subtitle: "<i>Public Relations</i>",
-        description: "<span>PR</span>, bertanggung jawab untuk menjaga hubungan baik...",
+        description: "<span><i>Public Relations</i></span>, bertanggung jawab dalam beberapa hal: <br><br>Koordinator PR, bertanggung jawab untuk mengatur segala bentuk konten publikasi pada media sosial BEM UMN, menjadi penghubung dari Media Kampus UMN, mengatur segala bentuk kerjasama <i>media partner</i> dengan BEM UMN, dan mengawasi kinerja dari divisi PR Internal maupun Eksternal.<br><br>PR Internal, bertanggung jawab dalam mengatur segala bentuk desain dan visualisasi yang bersangkutan dengan publikasi konten pada media sosial BEM UMN, serta bertanggung jawab dalam melakukan penyebaran informasi melalui media sosial BEM UMN atau media komunikasi lainnya.<br><br>PR Eksternal, bertanggung jawab dalam menjalin hubungan kerjasama dengan pihak internal maupun eksternal UMN, berperan dalam mengurus dokumen administratif yang bersinggungan dengan pihak eksternal, serta bertanggung jawab dalam melakukan komunikasi pada media sosial BEM UMN.",
         images: [fotopr, null],
         element: elementPR,
         members: [

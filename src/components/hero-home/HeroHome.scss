@@ -68,5 +68,32 @@
         gap: 16px;
         align-items: center;
     }
+}
 
+@media screen and (max-width: 820px) {
+    .hero-home_section {    
+        .hero-home-title {
+            margin: 0 16px;
+
+            .title-top {    
+                p {
+                    font-size: 18px;
+    
+                    span {
+                    }
+                }
+    
+                h1 {
+                    font-size: 40px;
+                }
+            }
+    
+            p {
+                font-size: 16px;
+            }
+        }
+    
+        .button-wrapper {
+        }
+    }
 }

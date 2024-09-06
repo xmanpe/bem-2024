@@ -15,10 +15,10 @@ const HeroHome = () => {
                 <p>Badan Eksekutif Mahasiswa Universitas Multimedia Nusantara merupakan organisasi kemahasiswaan resmi di tingkat universitas di bawah Rektorat Bidang Kemahasiswaan.</p>
             </div>
             <div className="button-wrapper">
-                <Button variant="primary" section="about-us">
+                <Button variant="primary" section="">
                     Tentang kami
                 </Button>
-                <Button variant="secondary" to="/program-kerja">
+                <Button variant="secondary" to="/">
                     Program kerja
                 </Button>
             </div>

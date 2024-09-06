@@ -14,9 +14,9 @@ const Navbar = () => {
                     <div className="navbar-each-menu active">
                         <p>Beranda</p>
                     </div>
-                    <div className="navbar-each-menu">
+                    {/* <div className="navbar-each-menu">
                         <p>BEMInfo</p>
-                    </div>
+                    </div> */}
                     <div className="navbar-each-menu">
                         <img src={list} alt="list menu" />
                     </div>
