@@ -38,7 +38,7 @@ const contactPersons = [
 const Footer = () => {
     return (
         <footer className="footer_section">
-            <div className="top">
+            {/* <div className="top">
                 <div className="left">
                     <div className="bem-logo">
                         <img src={bemlogo} alt="BEM Universitas Multimedia Nusantara Logo" />
@@ -80,11 +80,11 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="bottom">
-                <p className="copyright">Ⓒ 2024 BEM Universitas Multimedia Nusantara</p>
+                <p className="copyright">© 2024 BEM Universitas Multimedia Nusantara</p>
                 <p className="designed">
-                Situs di desain dan dikembangkan oleh <span className="artis">Daffa Akbari</span> | Per 8 September 2024
+                <i>Designed and developed by</i> <span className="artis">Daffa Akbari</span> | Per 8 September 2024
                 </p>
             </div>
         </footer>
