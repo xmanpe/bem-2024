@@ -8,7 +8,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import images
-import kevin from '../../images/kevin.png';
+import foto1 from '../../images/home/foto-1.jpeg';
+import foto2 from '../../images/home/foto-2.jpeg';
+import foto3 from '../../images/home/foto-3.jpeg';
+import foto4 from '../../images/home/foto-4.jpeg';
+import foto5 from '../../images/home/foto-5.jpeg';
 import substract from '../../images/vector/substract.svg';
 
 const SwiperHeroHome = () => {
@@ -50,22 +54,19 @@ const SwiperHeroHome = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <img src={kevin} alt="kevin" />
+                        <img src={foto1} alt="kevin" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={kevin} alt="kevin" />
+                        <img src={foto3} alt="kevin" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={kevin} alt="kevin" />
+                        <img src={foto2} alt="kevin" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={kevin} alt="kevin" />
+                        <img src={foto4} alt="kevin" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={kevin} alt="kevin" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src={kevin} alt="kevin" />
+                        <img src={foto5} alt="kevin" />
                     </SwiperSlide>
                 </Swiper>
             </div>
