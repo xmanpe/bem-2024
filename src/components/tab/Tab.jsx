@@ -1,54 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import './Tab.scss';
 
 // import icons
 import arrowDown from '../../images/icon/arrow-down.svg';
 
-const Tab = () => {
+const Tab = ({ tabs, activeTab, setActiveTab }) => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <>
-        <div className="tab-desktop">
-            <div className="each-tab active">
-                <p>BPH</p>
+            <div className="tab-desktop">
+                {tabs.map((tab, index) => (
+                    <div 
+                        key={index}
+                        className={`each-tab ${activeTab === tab ? "active" : ""}`} 
+                        onClick={() => setActiveTab(tab)}
+                    >
+                        <p>{tab}</p>
+                    </div>
+                ))}
             </div>
-            <div className="each-tab">
-                <p>PR</p>
-            </div>
-            <div className="each-tab">
-                <p>SUKMA</p>
-            </div>
-            <div className="each-tab">
-                <p>SUFAK</p>
-            </div>
-            <div className="each-tab">
-                <p>SULSO</p>
-            </div>
-        </div>
-        <div className="tab-mobile">
-            <div className="mobile-active">
-                <p>BPH</p>
-                <img src={arrowDown} alt="arrow" />
-            </div>
-            <div className="tab-wrapper">
-                <div className="each-tab">
-                    <p>BPH</p>
+
+            <div className="tab-mobile">
+                <div className="mobile-active" onClick={() => setIsOpen(!isOpen)}>
+                    <p>{activeTab}</p>
+                    <img src={arrowDown} alt="arrow" className={isOpen ? "open" : ""} />
                 </div>
-                <div className="each-tab">
-                    <p>PR</p>
-                </div>
-                <div className="each-tab">
-                    <p>SUKMA</p>
-                </div>
-                <div className="each-tab">
-                    <p>SUFAK</p>
-                </div>
-                <div className="each-tab">
-                    <p>SULSO</p>
-                </div>
+                {isOpen && (
+                    <div className="tab-wrapper">
+                        {tabs.map((tab, index) => (
+                            <div
+                                key={index}
+                                className={`each-tab ${activeTab === tab ? "active" : ""}`} 
+                                onClick={() => {
+                                    setActiveTab(tab);
+                                    setIsOpen(false);
+                                }}
+                            >
+                                <p>{tab}</p>
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
-        </div>
         </>
     );
 }
- 
+
 export default Tab;

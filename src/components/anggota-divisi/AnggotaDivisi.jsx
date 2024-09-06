@@ -1,103 +1,103 @@
 import React from "react";
 import './AnggotaDivisi.scss';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel } from 'swiper/modules';
 
 // import swiper
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// import images
-import fotoTest from '../../images/foto-divisi/bph/foto-1.png';
-import fotoTest2 from '../../images/foto-divisi/bph/foto-2.png';
+// import component 
+import SaaStukmCard from "../saa-stukm-card/SaaStukmCard";
 
-import sherly from '../../images/foto-divisi/bph/member/sherly.png';
-import vidy from '../../images/foto-divisi/bph/member/vidy.png';
-import nicholas from '../../images/foto-divisi/bph/member/nicholas.png';
-import amanda from '../../images/foto-divisi/bph/member/amanda.png';
+// Import the division data
+import { DivisiData } from './DivisiData';
 
-// import elements
-import elementBPH from '../../images/element/grow.svg';
+const AnggotaDivisi = ({ activeTab }) => {
+    const renderAdditionalContent = () => {
 
-const AnggotaDivisi = () => {
+        if (activeTab === 'SUFAK') {
+            return (
+                <SaaStukmCard 
+                    title={'Selain itu...'}
+                    desc={'Selain berperan aktif dalam mengawasi kinerja himpunan dibawah naungannya, SUFAK juga bertanggung jawab dalam menjalankan program kinerja internal BEM yaitu Student Association Awards (SAA) yang nantinya ditujukan kepada seluruh himpunan dibawah naungan BEM.'}
+                />
+            );
+        }
+
+        if (activeTab === 'SUKM') {
+            return (
+                <div className="additional-content">
+                    <h2>SUKM Special Component</h2>
+                    <p>This is additional content specifically for the SUKM division.</p>
+                </div>
+            );
+        }
+
+        return null;
+    };
+
+    const renderContent = () => {
+        const division = DivisiData[activeTab];
+        
+        if (!division) return null;
+
+        return (
+            <section className="anggota-divisi_section">
+                <div className="top">
+                    <div className="title">
+                        <h1>{division.title}</h1>
+                        <p dangerouslySetInnerHTML={{ __html: division.subtitle }}></p>
+                    </div>
+                    <div className="image-wrapper">
+                        <Swiper
+                            spaceBetween={16}
+                            modules={[Navigation, Autoplay, A11y, Pagination]}
+                            slidesPerView={1}
+                            loop={true}
+                            pagination={{ clickable: true }}
+                            autoplay={{ delay: 3000, disableOnInteraction: false }}
+                            className="mySwiper"
+                        >
+                            {division.images.map((image, index) => (
+                                <SwiperSlide key={index}>
+                                    <img src={image} alt={`${division.title} ${index + 1}`} />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                </div>
+
+                <div className="middle">
+                    <img src={division.element} alt="element" />
+                    <p className="description" dangerouslySetInnerHTML={{ __html: division.description }}></p>
+                </div>
+
+                {/* Additional content for SUFAK and SUKM */}
+                {renderAdditionalContent()}
+
+                <div className="bottom">
+                    {division.members.map((member, index) => (
+                        <div className="each-person" key={index}>
+                            <div className="image-person">
+                                <img src={member.image} alt={member.name} />
+                            </div>
+                            <div className="title-person">
+                                <h1>{member.name}</h1>
+                                <p>{member.role}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+        );
+    };
+
     return (
-        <section className="anggota-divisi_section">
-            <div className="top">
-                <div className="title">
-                    <h1>BPH</h1>
-                    <p>Badan Pengurus Harian</p>
-                </div>
-                <div className="image-wrapper">
-                    <Swiper
-                        spaceBetween={16}
-                        modules={[Navigation, Autoplay, A11y, Mousewheel, Pagination]}
-                        slidesPerView={1}
-                        scrollbar={{ draggable: true }}
-                        mousewheel={false}
-                        loop={true}
-                        pagination={{ clickable: true }}
-                        autoplay={{
-                            delay: 3000,
-                            disableOnInteraction: false,
-                            pauseOnMouseEnter: false,
-                        }}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide>
-                            <img src={fotoTest} alt="foto" />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <img src={fotoTest2} alt="foto" />
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
-            </div>
-            <div className="middle">
-                <img src={elementBPH} alt="" />
-                <p className="description">
-                <span>Badan Pengurus Harian</span>, merupakan divisi yang bertanggung jawab dalam melakukan koordinasi terkait program kerja, mengawasi kinerja dari masing-masing anggota divisi, serta bertugas dalam pengelolaan keuangan serta hal administratif BEM UMN.
-                </p>
-            </div>
-            <div className="bottom">
-                <div className="each-person">
-                    <div className="image-person">
-                        <img src={sherly} alt="person" />
-                    </div>
-                    <div className="title-person">
-                        <h1>Sherly</h1>
-                        <p>Ketua</p>
-                    </div>
-                </div>
-                <div className="each-person">
-                    <div className="image-person">
-                        <img src={nicholas} alt="person" />
-                    </div>
-                    <div className="title-person">
-                        <h1>Nicholas Prawira</h1>
-                        <p>Wakil Ketua</p>
-                    </div>
-                </div>
-                <div className="each-person">
-                    <div className="image-person">
-                        <img src={vidy} alt="person" />
-                    </div>
-                    <div className="title-person">
-                        <h1>Vidy Tandiono</h1>
-                        <p>Sekben 1</p>
-                    </div>
-                </div>
-                <div className="each-person">
-                    <div className="image-person">
-                        <img src={amanda} alt="person" />
-                    </div>
-                    <div className="title-person">
-                        <h1>Amanda Nicole</h1>
-                        <p>Sekben 2</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div className="anggota-divisi">
+            {renderContent()}
+        </div>
     );
 }
- 
+
 export default AnggotaDivisi;
