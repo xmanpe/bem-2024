@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import './AnggotaDivisi.scss';
+import { motion } from 'framer-motion';
 
 // import swiper
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
@@ -10,10 +11,23 @@ import 'swiper/css/pagination';
 // import component 
 import SaaStukmCard from "../saa-stukm-card/SaaStukmCard";
 
+// import images
+import saa from '../../images/saa.jpeg';
+import stukm from '../../images/stukm.jpeg';
+
 // Import the division data
 import { DivisiData } from './DivisiData';
 
 const AnggotaDivisi = ({ activeTab }) => {
+    const [hoveredRole, setHoveredRole] = useState(null);
+
+    const handleMouseEnter = (role) => {
+        setHoveredRole(role);
+    };
+
+    const handleMouseLeave = () => {
+        setHoveredRole(null);
+    };
     const renderAdditionalContent = () => {
 
         if (activeTab === 'SUFAK') {
@@ -21,16 +35,18 @@ const AnggotaDivisi = ({ activeTab }) => {
                 <SaaStukmCard 
                     title={'Selain itu...'}
                     desc={'Selain berperan aktif dalam mengawasi kinerja himpunan dibawah naungannya, SUFAK juga bertanggung jawab dalam menjalankan program kinerja internal BEM yaitu Student Association Awards (SAA) yang nantinya ditujukan kepada seluruh himpunan dibawah naungan BEM.'}
+                    imageBackground={saa}
                 />
             );
         }
 
         if (activeTab === 'SUKM') {
             return (
-                <div className="additional-content">
-                    <h2>SUKM Special Component</h2>
-                    <p>This is additional content specifically for the SUKM division.</p>
-                </div>
+                <SaaStukmCard 
+                    title={'Selain itu...'}
+                    desc={'SUKM juga bertanggung jawab dalam menjalankan program kinerja internal BEM yaitu Serah Tahunan UKM (STUKM) yang nantinya ditujukan kepada seluruh UKM dibawah naungan BEM dan juga kegiatan Arkasa yang diawasi langsung oleh SUKM Seni Budaya.'}
+                    imageBackground={stukm}
+                />
             );
         }
 
@@ -41,6 +57,8 @@ const AnggotaDivisi = ({ activeTab }) => {
         const division = DivisiData[activeTab];
         
         if (!division) return null;
+
+        const bottomClass = activeTab === 'SULSO' ? 'bottom sulso-grid' : 'bottom';
 
         return (
             <section className="anggota-divisi_section">
@@ -75,9 +93,14 @@ const AnggotaDivisi = ({ activeTab }) => {
 
                 {renderAdditionalContent()}
 
-                <div className="bottom">
+                <div className={bottomClass}>
                     {division.members.map((member, index) => (
-                        <div className="each-person" key={index}>
+                        <div 
+                            className="each-person"
+                            key={index}
+                            onMouseEnter={() => handleMouseEnter(member.role)} 
+                            onMouseLeave={handleMouseLeave}
+                        >
                             <div className="image-person">
                                 <img src={member.image} alt={member.name} />
                             </div>
@@ -85,6 +108,11 @@ const AnggotaDivisi = ({ activeTab }) => {
                                 <h1>{member.name}</h1>
                                 <p>{member.role}</p>
                             </div>
+                            {hoveredRole === member.role && division.roleDescriptions && division.roleDescriptions[member.role] && (
+                                <div className="role-popup">
+                                    {division.roleDescriptions[member.role]}
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>

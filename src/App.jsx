@@ -22,7 +22,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/anggota" element={<Anggota />} />
+          <Route path="/anggota-bem" element={<Anggota />} />
         </Routes>
         <Navbar />
         <Footer />

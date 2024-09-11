@@ -1,9 +1,16 @@
 // divisiData.jsx
-import fotobph from '../../images/foto-divisi/bph/foto-1.png';
-import fotobph2 from '../../images/foto-divisi/bph/foto-2.png';
-import fotosukma from '../../images/foto-divisi/sukma/foto-1.png';
-import fotosukma2 from '../../images/foto-divisi/sukma/foto-2.png';
-import fotopr from '../../images/foto-divisi/pr/foto-1.png';
+import fotobph from '../../images/foto-divisi/bph/foto-1.jpeg';
+import fotobph2 from '../../images/foto-divisi/bph/foto-2.jpeg';
+import fotosukma from '../../images/foto-divisi/sukma/foto-1.jpeg';
+import fotosukma2 from '../../images/foto-divisi/sukma/foto-2.jpeg';
+import fotopr from '../../images/foto-divisi/pr/foto-1.jpeg';
+import fotopr2 from '../../images/foto-divisi/pr/foto-2.jpeg';
+import fotosukm from '../../images/foto-divisi/sukm/foto-1.jpeg';
+import fotosukm2 from '../../images/foto-divisi/sukm/foto-2.jpeg';
+import fotosufak from '../../images/foto-divisi/sufak/foto-1.jpeg';
+import fotosufak2 from '../../images/foto-divisi/sufak/foto-2.jpeg';
+import fotosulso from '../../images/foto-divisi/sulso/foto-1.jpeg';
+import fotosulso2 from '../../images/foto-divisi/sulso/foto-2.jpeg';
 
 // BPH Members
 import sherly from '../../images/foto-divisi/bph/member/sherly.png';
@@ -23,12 +30,15 @@ import putrida from '../../images/foto-divisi/sukma/member/putrida.png';
 import elementBPH from '../../images/element/grow.svg';
 import elementPR from '../../images/element/connect.svg';
 import elementSUKMA from '../../images/element/innovate.svg';
+import elementSUFAK from '../../images/element/solid.svg';
+import elementSUKM from '../../images/element/balance.svg';
+import elementSULSO from '../../images/element/continuity.svg';
 
 export const DivisiData = {
     BPH: {
         title: "BPH",
         subtitle: "Badan Pengurus Harian",
-        description: "<span>Badan Pengurus Harian</span>, merupakan divisi yang bertanggung jawab dalam melakukan koordinasi terkait program kerja, mengawasi kinerja dari masing-masing anggota divisi, serta bertugas dalam pengelolaan keuangan serta hal administratif BEM UMN.",
+        description: "<span>BPH</span>, merupakan divisi yang bertanggung jawab dalam melakukan koordinasi terkait program kerja, mengawasi kinerja dari masing-masing anggota divisi, serta bertugas dalam pengelolaan keuangan serta hal administratif BEM UMN.",
         images: [fotobph, fotobph2],
         element: elementBPH,
         members: [
@@ -41,8 +51,8 @@ export const DivisiData = {
     PR: {
         title: "PR",
         subtitle: "<i>Public Relations</i>",
-        description: "<span><i>Public Relations</i></span>, bertanggung jawab dalam beberapa hal: <br><br>Koordinator PR, bertanggung jawab untuk mengatur segala bentuk konten publikasi pada media sosial BEM UMN, menjadi penghubung dari Media Kampus UMN, mengatur segala bentuk kerjasama <i>media partner</i> dengan BEM UMN, dan mengawasi kinerja dari divisi PR Internal maupun Eksternal.<br><br>PR Internal, bertanggung jawab dalam mengatur segala bentuk desain dan visualisasi yang bersangkutan dengan publikasi konten pada media sosial BEM UMN, serta bertanggung jawab dalam melakukan penyebaran informasi melalui media sosial BEM UMN atau media komunikasi lainnya.<br><br>PR Eksternal, bertanggung jawab dalam menjalin hubungan kerjasama dengan pihak internal maupun eksternal UMN, berperan dalam mengurus dokumen administratif yang bersinggungan dengan pihak eksternal, serta bertanggung jawab dalam melakukan komunikasi pada media sosial BEM UMN.",
-        images: [fotopr, null],
+        description: "<span>PR</span>, merupakan divisi yang bertanggung jawab untuk melakukan publikasi konten, menyebarluaskan informasi-informasi penting pada setiap media komunikasi yang digunakan, serta berperan aktif dalam menjalin hubungan dengan pihak internal maupun eksternal UMN.",
+        images: [fotopr, fotopr2],
         element: elementPR,
         members: [
             { name: "Gabriella Christina", role: "Koordinator PR", image: null },
@@ -55,7 +65,7 @@ export const DivisiData = {
     SUKMA: {
         title: "SUKMA",
         subtitle: "Supervisor Kegiatan Mahasiswa",
-        description: "<span>Supervisor Kegiatan Mahasiswa</span>, bertanggung jawab dalam mengawasi masing-masing Kegiatan Mahasiswa yang dinaungi agar dapat terlaksana sesuai dengan tujuan kegiatannya. SUKMA juga berperan aktif untuk memastikan kinerja dari setiap BPH yang terlibat langsung dalam Kegiatan Mahasiswa agar alur kerja yang terbentuk dapat berjalan dengan baik.",
+        description: "<span>SUKMA</span>, bertanggung jawab dalam mengawasi masing-masing Kegiatan Mahasiswa yang dinaungi agar dapat terlaksana sesuai dengan tujuan kegiatannya. SUKMA juga berperan aktif untuk memastikan kinerja dari setiap BPH yang terlibat langsung dalam Kegiatan Mahasiswa agar alur kerja yang terbentuk dapat berjalan dengan baik.",
         images: [fotosukma, fotosukma2],
         element: elementSUKMA,
         members: [
@@ -68,46 +78,57 @@ export const DivisiData = {
         ],
     },
     SUFAK: {
-        title: "SUKM",
-        subtitle: "Supervisor Unit Kegiatan Mahasiswa",
-        description: "<span>SUKM</span>, bertanggung jawab untuk menjaga hubungan baik...",
-        images: [null, null],
-        element: elementPR,
+        title: "SUFAK",
+        subtitle: "Supervisor Fakultas",
+        description: "<span>SUFAK</span>, bertanggung jawab dalam mengawasi, meninjau, dan memastikan kinerja, dari masing-masing himpunan UMN yang dinaunginya, dengan tujuan alur kerja yang dibangun dapat berjalan dengan baik, dan program kerja yang direncanakan dapat terealisasikan sesuai dengan visi misi himpunan maupun UMN.",
+        images: [fotosufak, fotosufak2],
+        element: elementSUFAK,
         members: [
-            { name: "Andi Bintang", role: "Koordinator PR", image: null },
-            { name: "Ibrahim Zaidan", role: "PR Internal 1", image: null },
-            { name: "Gabriella Nadine", role: "PR Internal 2", image: null },
-            { name: "Christyana Trifia", role: "PR Eksternal 1", image: null },
-            { name: "Antonio Ryo", role: "PR Eksternal 2", image: null },
+            { name: "Kevin Jonathan", role: "SUFAK Bisnis", image: null },
+            { name: "Romi Andreas", role: "SUFAK Seni & Desain", image: null },
+            { name: "Septhia Rosa", role: "SUFAK Teknik & Informatika", image: null },
+            { name: "Sese Listiani", role: "SUFAK Ilmu Komunikasi", image: null },
         ],
+        roleDescriptions: {
+            "SUFAK Bisnis": "Bertanggung jawab dalam mengawasi himpunan di Fakultas Bisnis...",
+            "SUFAK Seni & Desain": "Bertanggung jawab dalam mengawasi himpunan di Fakultas Seni & Desain...",
+            "SUFAK Teknik & Informatika": "Bertanggung jawab dalam mengawasi himpunan di Fakultas Teknik & Informatika...",
+            "SUFAK Ilmu Komunikasi": "Bertanggung jawab dalam mengawasi himpunan di Fakultas Ilmu Komunikasi...",
+        },
     },
     SUKM: {
-        title: "PR",
-        subtitle: "Public Relations",
-        description: "<span>PR</span>, bertanggung jawab untuk menjaga hubungan baik...",
-        images: [null, null],
-        element: elementPR,
+        title: "SUKM",
+        subtitle: "Supervisor Unit Kegiatan Mahasiswa",
+        description: "<span>SUKM</span>, bertanggung jawab dalam mengawasi, meninjau, dan memastikan kinerja, dari masing-masing UKM yang dinaunginya, dengan tujuan alur kerja yang dibangun dapat berjalan dengan baik, dan program kerja yang direncanakan dapat terus berjalan sesuai dengan visi misi UKM maupun UMN.",
+        images: [fotosukm, fotosukm2],
+        element: elementSUKM,
         members: [
-            { name: "Gabriella Christina", role: "Koordinator PR", image: null },
-            { name: "Daffa Akbari", role: "PR Internal 1", image: null },
-            { name: "Gabriella Nadine", role: "PR Internal 2", image: null },
-            { name: "Christyana Trifia", role: "PR Eksternal 1", image: null },
-            { name: "Antonio Ryo", role: "PR Eksternal 2", image: null },
+            { name: "Valencia Aurelia", role: "SUKM Seni Budaya 1", image: null },
+            { name: "Andi Bintang", role: "SUKM Seni Budaya 2", image: null },
+            { name: "Fitra Kamila", role: "SUKM Olahraga 1", image: null },
+            { name: "Jason Clay", role: "SUKM Olahraga 2", image: null },
+            { name: "Ibrahim Zaidan", role: "SUKM Sains & Sosial", image: null },
         ],
+        roleDescriptions: {
+            "SUKM Seni Budaya 1": "Mengawasi UKM di bidang seni dan budaya...",
+            "SUKM Olahraga 1": "Mengawasi UKM di bidang olahraga...",
+            "SUKM Sains & Sosial": "Mengawasi UKM di bidang sains dan sosial...",
+        },
     },
     SULSO: {
-        title: "PR",
-        subtitle: "Public Relations",
-        description: "<span>PR</span>, bertanggung jawab untuk menjaga hubungan baik...",
-        images: [null, null],
-        element: elementPR,
+        title: "SULSO",
+        subtitle: "Supervisor Lembaga Semi Otonom",
+        description: "<span>SULSO</span>, bertanggung jawab dalam membimbing dan mengawasi kinerja maupun daya cipta dari masing-masing LSO, agar program kerja yang telah ditentukan dapat berjalan dan terlaksana dengan baik.",
+        images: [fotosulso, fotosulso2],
+        element: elementSULSO,
         members: [
-            { name: "Gabriella Christina", role: "Koordinator PR", image: null },
-            { name: "Daffa Akbari", role: "PR Internal 1", image: null },
-            { name: "Gabriella Nadine", role: "PR Internal 2", image: null },
-            { name: "Christyana Trifia", role: "PR Eksternal 1", image: null },
-            { name: "Antonio Ryo", role: "PR Eksternal 2", image: null },
+            { name: "Indira Sukma", role: "SULSO 1", image: null },
+            { name: "Alicia Dindya", role: "SULSO 2", image: null },
         ],
+        roleDescriptions: {
+            "SULSO 1": "Mengawasi Lembaga Semi Otonom...",
+            "SULSO 2": "Mengawasi Lembaga Semi Otonom lainnya...",
+        },
     },
 };
 

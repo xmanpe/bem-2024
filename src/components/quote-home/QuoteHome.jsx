@@ -52,7 +52,7 @@ const QuoteHome = () => {
                     </div>
                 </div>
             </div>
-            <Button variant="secondary" to="">
+            <Button variant="secondary" to="/anggota-bem">
                 Anggota BEM UMN GEN XIV
             </Button>
         </section>

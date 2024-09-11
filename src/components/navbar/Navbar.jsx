@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './Navbar.scss';
 
 // import images
@@ -6,10 +7,16 @@ import bemLogo from '../../images/logo/bem.svg';
 import list from '../../images/icon/menu.svg'
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
+    const handleLogo = () => {
+        navigate('/'); 
+    }
+
     return (
         <div className="navbar-overlay">
             <nav className="navbar">
-                <img src={bemLogo} alt="bem logo" />
+                <img src={bemLogo} alt="bem logo" onClick={handleLogo} />
                 <div className="navbar-menu">
                     <div className="navbar-each-menu active">
                         <p>Beranda</p>
