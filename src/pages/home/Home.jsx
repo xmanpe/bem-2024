@@ -10,6 +10,10 @@ import QuoteHome from "../../components/quote-home/QuoteHome";
 import TugasBEMHome from "../../components/tugas-bem-home/TugasBEMHome";
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     const { scrollY } = useScroll();
     const heroScale = useTransform(scrollY, [0, 300], [1, 0.85]);
     const heroOpacity = useTransform(scrollY, [0, 300], [1, 0]);

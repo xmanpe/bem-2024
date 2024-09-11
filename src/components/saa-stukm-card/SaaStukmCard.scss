@@ -16,15 +16,15 @@
         
         h1 {
             color: var(--Colors-white-white, #FFF);
-            font-size: 22px;
+            font-size: 20px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
         }
     
         p {
-            color: rgba(255, 255, 255, 0.80);
-            font-size: 16px;
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
             font-style: normal;
             font-weight: 400;
             line-height: 160%;
@@ -52,5 +52,10 @@
         &:hover {
             background: rgba(255, 255, 255, 0.1);
         }
+    }
+
+    &:hover {
+        padding: 28px;
+        box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.10);
     }
 }

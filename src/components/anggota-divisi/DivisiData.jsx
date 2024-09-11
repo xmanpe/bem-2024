@@ -13,18 +13,42 @@ import fotosulso from '../../images/foto-divisi/sulso/foto-1.jpeg';
 import fotosulso2 from '../../images/foto-divisi/sulso/foto-2.jpeg';
 
 // BPH Members
-import sherly from '../../images/foto-divisi/bph/member/sherly.png';
-import vidy from '../../images/foto-divisi/bph/member/vidy.png';
-import nicholas from '../../images/foto-divisi/bph/member/nicholas.png';
-import amanda from '../../images/foto-divisi/bph/member/amanda.png';
+import sherly from '../../images/foto-divisi/bph/member/sherly.jpeg';
+import vidy from '../../images/foto-divisi/bph/member/vidy.jpeg';
+import nicholas from '../../images/foto-divisi/bph/member/nicholas.jpeg';
+import amanda from '../../images/foto-divisi/bph/member/amanda.jpeg';
+
+// PR Members
+import bella from '../../images/foto-divisi/pr/member/bella.jpeg';
+import daffa from '../../images/foto-divisi/pr/member/daffa.jpeg';
+import nadine from '../../images/foto-divisi/pr/member/nadine.jpeg';
+import christy from '../../images/foto-divisi/pr/member/christy.jpeg';
+import ryo from '../../images/foto-divisi/pr/member/ryo.jpeg';
 
 // SUKMA Members
-import alfon from '../../images/foto-divisi/sukma/member/alfon.png';
-import steven from '../../images/foto-divisi/sukma/member/steven.png';
-import kathleen from '../../images/foto-divisi/sukma/member/kathleen.png';
-import ralph from '../../images/foto-divisi/sukma/member/ralph.png';
-import rapha from '../../images/foto-divisi/sukma/member/rapha.png';
-import putrida from '../../images/foto-divisi/sukma/member/putrida.png';
+import alfon from '../../images/foto-divisi/sukma/member/alfon.jpeg';
+import steven from '../../images/foto-divisi/sukma/member/steven.jpeg';
+import kathleen from '../../images/foto-divisi/sukma/member/kathleen.jpeg';
+import ralph from '../../images/foto-divisi/sukma/member/ralph.jpeg';
+import rapha from '../../images/foto-divisi/sukma/member/rapha.jpeg';
+import putrida from '../../images/foto-divisi/sukma/member/putrida.jpeg';
+
+// SUFAK Members
+import ds from '../../images/foto-divisi/sufak/member/ds.jpeg';
+import romi from '../../images/foto-divisi/sufak/member/romi.jpeg';
+import septhi from '../../images/foto-divisi/sufak/member/septhi.jpeg';
+import sese from '../../images/foto-divisi/sufak/member/sese.jpeg';
+
+// SUKM Members
+import valen from '../../images/foto-divisi/sukm/member/valen.jpeg';
+import bintang from '../../images/foto-divisi/sukm/member/bintang.jpeg';
+import fitra from '../../images/foto-divisi/sukm/member/fitra.jpeg';
+import clay from '../../images/foto-divisi/sukm/member/clay.jpeg';
+import ibra from '../../images/foto-divisi/sukm/member/ibra.jpeg';
+
+// SULSO Members
+import dira from '../../images/foto-divisi/sulso/member/dira.jpeg';
+import cia from '../../images/foto-divisi/sulso/member/cia.jpeg';
 
 // Elements
 import elementBPH from '../../images/element/grow.svg';
@@ -55,11 +79,11 @@ export const DivisiData = {
         images: [fotopr, fotopr2],
         element: elementPR,
         members: [
-            { name: "Gabriella Christina", role: "Koordinator PR", image: null },
-            { name: "Daffa Akbari", role: "PR Internal 1", image: null },
-            { name: "Gabriella Nadine", role: "PR Internal 2", image: null },
-            { name: "Christyana Trifia", role: "PR Eksternal 1", image: null },
-            { name: "Ryo Anthonio", role: "PR Eksternal 2", image: null },
+            { name: "Gabriella Christina", role: "Koordinator PR", image: bella },
+            { name: "Daffa Akbari", role: "PR Internal 1", image: daffa },
+            { name: "Gabriella Nadine", role: "PR Internal 2", image: nadine },
+            { name: "Christyana Trifia", role: "PR Eksternal 1", image: christy },
+            { name: "Ryo Anthonio", role: "PR Eksternal 2", image: ryo },
         ],
     },
     SUKMA: {
@@ -84,10 +108,10 @@ export const DivisiData = {
         images: [fotosufak, fotosufak2],
         element: elementSUFAK,
         members: [
-            { name: "Kevin Jonathan", role: "SUFAK Bisnis", image: null },
-            { name: "Romi Andreas", role: "SUFAK Seni & Desain", image: null },
-            { name: "Septhia Rosa", role: "SUFAK Teknik & Informatika", image: null },
-            { name: "Sese Listiani", role: "SUFAK Ilmu Komunikasi", image: null },
+            { name: "Kevin Jonathan", role: "SUFAK Bisnis", image: ds },
+            { name: "Romi Andreas", role: "SUFAK Seni & Desain", image: romi },
+            { name: "Septhia Rosa", role: "SUFAK Teknik & Informatika", image: septhi },
+            { name: "Sese Listiani", role: "SUFAK Ilmu Komunikasi", image: sese },
         ],
         roleDescriptions: {
             "SUFAK Bisnis": "Bertanggung jawab dalam mengawasi himpunan di Fakultas Bisnis...",
@@ -103,11 +127,11 @@ export const DivisiData = {
         images: [fotosukm, fotosukm2],
         element: elementSUKM,
         members: [
-            { name: "Valencia Aurelia", role: "SUKM Seni Budaya 1", image: null },
-            { name: "Andi Bintang", role: "SUKM Seni Budaya 2", image: null },
-            { name: "Fitra Kamila", role: "SUKM Olahraga 1", image: null },
-            { name: "Jason Clay", role: "SUKM Olahraga 2", image: null },
-            { name: "Ibrahim Zaidan", role: "SUKM Sains & Sosial", image: null },
+            { name: "Valencia Aurelia", role: "SUKM Seni Budaya 1", image: valen },
+            { name: "Andi Bintang", role: "SUKM Seni Budaya 2", image: bintang },
+            { name: "Fitra Kamila", role: "SUKM Olahraga 1", image: fitra },
+            { name: "Jason Clay", role: "SUKM Olahraga 2", image: clay },
+            { name: "Ibrahim Zaidan", role: "SUKM Sains & Sosial", image: ibra },
         ],
         roleDescriptions: {
             "SUKM Seni Budaya 1": "Mengawasi UKM di bidang seni dan budaya...",
@@ -122,8 +146,8 @@ export const DivisiData = {
         images: [fotosulso, fotosulso2],
         element: elementSULSO,
         members: [
-            { name: "Indira Sukma", role: "SULSO 1", image: null },
-            { name: "Alicia Dindya", role: "SULSO 2", image: null },
+            { name: "Indira Sukma", role: "SULSO 1", image: dira },
+            { name: "Alicia Dindya", role: "SULSO 2", image: cia },
         ],
         roleDescriptions: {
             "SULSO 1": "Mengawasi Lembaga Semi Otonom...",

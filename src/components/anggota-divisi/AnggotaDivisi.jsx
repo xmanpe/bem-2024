@@ -36,6 +36,7 @@ const AnggotaDivisi = ({ activeTab }) => {
                     title={'Selain itu...'}
                     desc={'Selain berperan aktif dalam mengawasi kinerja himpunan dibawah naungannya, SUFAK juga bertanggung jawab dalam menjalankan program kinerja internal BEM yaitu Student Association Awards (SAA) yang nantinya ditujukan kepada seluruh himpunan dibawah naungan BEM.'}
                     imageBackground={saa}
+                    activeTab={'SUFAK'}
                 />
             );
         }
@@ -46,6 +47,7 @@ const AnggotaDivisi = ({ activeTab }) => {
                     title={'Selain itu...'}
                     desc={'SUKM juga bertanggung jawab dalam menjalankan program kinerja internal BEM yaitu Serah Tahunan UKM (STUKM) yang nantinya ditujukan kepada seluruh UKM dibawah naungan BEM dan juga kegiatan Arkasa yang diawasi langsung oleh SUKM Seni Budaya.'}
                     imageBackground={stukm}
+                    activeTab={'SUKM'}
                 />
             );
         }

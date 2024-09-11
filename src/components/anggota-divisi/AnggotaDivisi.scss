@@ -140,11 +140,11 @@
     .bottom {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 20px;
+        gap: 32px 16px;
         justify-content: center;
 
         &.sulso-grid {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
 
         .each-person {
@@ -201,31 +201,31 @@
             .title-person {
                 display: flex;
                 flex-direction: column;
-                gap: 8px;
+                gap: 4px;
                 width: 100%;
 
                 h1 {
                     color: #000;
                     text-align: center;
-                    font-size: 16px;
+                    font-size: 14px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: normal;
                 }
 
                 p {
-                    color: rgba(0, 0, 0, 0.60);
+                    color: rgba(0, 0, 0, 0.40);
                     text-align: center;
-                    font-size: 14px;
+                    font-size: 12px;
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 400;
                     line-height: normal;
                 }
             }
 
             .role-popup {
                 position: absolute;
-                bottom: 100%;
+                bottom: 105%;
                 left: 50%;
                 transform: translateX(-50%);
                 padding: 8px 12px;

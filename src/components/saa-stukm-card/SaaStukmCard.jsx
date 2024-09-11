@@ -4,11 +4,7 @@ import './SaaStukmCard.scss';
 // import component
 import Button from "../cta/Button";
 
-const SaaStukmCard = ({ title, desc, link, imageBackground }) => {
-    
-    const handleButton = () => {
-        // Add your button click handler logic here
-    }
+const SaaStukmCard = ({ title, desc, link, imageBackground, activeTab }) => {
 
     return (
         <div className="saa-stukm-card" style={{
@@ -18,9 +14,21 @@ const SaaStukmCard = ({ title, desc, link, imageBackground }) => {
                 <h1>{title}</h1>
                 <p>{desc}</p>
             </div>
-            <Button variant="secondary-outline-white" to='/saa' onClick={handleButton}>
-                Selengkapnya
-            </Button>
+            {activeTab === 'SUFAK' && (
+                <Button variant="secondary-outline-white" to={link}>
+                    Selengkapnya
+                </Button>
+            )}
+            {activeTab === 'SUKM' && (
+                <div className="button-wrapper">
+                    <Button variant="secondary-outline-white" to={link}>
+                        Tentang STUKM
+                    </Button>
+                    <Button variant="secondary-outline-white" to={link}>
+                        Tentang Arkasa
+                    </Button>
+                </div>
+            )}
         </div>
     );
 }

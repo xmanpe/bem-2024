@@ -49,3 +49,9 @@
         background: rgba(255, 255, 255, 0.1);
     }
 }
+
+.button-wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
