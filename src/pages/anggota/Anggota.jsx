@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import './Anggota.scss';
 
 // import components
@@ -13,18 +14,55 @@ const Anggota = () => {
     const tabs = ['BPH', 'PR', 'SUKMA', 'SUFAK', 'SUKM', 'SULSO'];
     const [activeTab, setActiveTab] = useState(tabs[0]);
 
+    const controls = useAnimation();
+
+    useEffect(() => {
+        controls.start("visible");
+    }, [controls]);
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                delayChildren: 0.3,
+                staggerChildren: 0.2,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { y: -20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 0.4,
+                ease: "easeOut",
+            },
+        },
+    };
+
     return (
-        <section className="page-anggota">
-            <Header 
-                activeTab={activeTab} 
-                setActiveTab={setActiveTab} 
-                tabs={tabs} 
-                
-                title={'Anggota'}   
-                desc={'Kenali anggota yang membentuk BEM UMN GEN XIV menjadi satu kesatuan yang solid.'}
-            />
-            <AnggotaDivisi activeTab={activeTab} />
-        </section>
+        <motion.section
+            className="page-anggota"
+            variants={containerVariants}
+            initial="hidden"
+            animate={controls}
+        >
+            <motion.div variants={itemVariants}>
+                <Header 
+                    activeTab={activeTab} 
+                    setActiveTab={setActiveTab} 
+                    tabs={tabs} 
+                    title={'Anggota'}   
+                    desc={'Kenali anggota yang membentuk BEM UMN GEN XIV menjadi satu kesatuan yang solid.'}
+                />
+            </motion.div>
+            <motion.div variants={itemVariants}>
+                <AnggotaDivisi activeTab={activeTab} />
+            </motion.div>
+        </motion.section>
     );
 }
 

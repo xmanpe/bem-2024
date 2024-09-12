@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import './AnggotaDivisi.scss';
 import { motion } from 'framer-motion';
 
@@ -28,13 +28,13 @@ const AnggotaDivisi = ({ activeTab }) => {
     const handleMouseLeave = () => {
         setHoveredRole(null);
     };
-    const renderAdditionalContent = () => {
 
+    const renderAdditionalContent = () => {
         if (activeTab === 'SUFAK') {
             return (
                 <SaaStukmCard 
                     title={'Selain itu...'}
-                    desc={'Selain berperan aktif dalam mengawasi kinerja himpunan dibawah naungannya, SUFAK juga bertanggung jawab dalam menjalankan program kinerja internal BEM yaitu Student Association Awards (SAA) yang nantinya ditujukan kepada seluruh himpunan dibawah naungan BEM.'}
+                    desc={'SUFAK juga bertanggung jawab dalam menjalankan program kinerja internal BEM yaitu Student Association Awards (SAA) yang nantinya ditujukan kepada seluruh himpunan dibawah naungan BEM.'}
                     imageBackground={saa}
                     activeTab={'SUFAK'}
                 />
@@ -57,14 +57,31 @@ const AnggotaDivisi = ({ activeTab }) => {
 
     const renderContent = () => {
         const division = DivisiData[activeTab];
-        
         if (!division) return null;
 
         const bottomClass = activeTab === 'SULSO' ? 'bottom sulso-grid' : 'bottom';
 
+        const sectionVariant = {
+            hidden: { opacity: 0, scale: 0.8 },
+            visible: {
+                opacity: 1,
+                scale: 1,
+                transition: {
+                    duration: 0.5,
+                    delay: 0.2,
+                    ease: "easeOut",
+                },
+            },
+        };
+
         return (
-            <section className="anggota-divisi_section">
-                <div className="top">
+            <motion.section
+                className="anggota-divisi_section"
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+            >
+                <motion.div className="top" variants={sectionVariant} transition={{ delay: 0.1 }}>
                     <div className="title">
                         <h1>{division.title}</h1>
                         <p dangerouslySetInnerHTML={{ __html: division.subtitle }}></p>
@@ -86,39 +103,41 @@ const AnggotaDivisi = ({ activeTab }) => {
                             ))}
                         </Swiper>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="middle">
+                <motion.div className="middle" variants={sectionVariant} transition={{ delay: 0.3 }}>
                     <img src={division.element} alt="element" />
                     <p className="description" dangerouslySetInnerHTML={{ __html: division.description }}></p>
-                </div>
+                </motion.div>
 
-                {renderAdditionalContent()}
-
-                <div className={bottomClass}>
+                <motion.div className={bottomClass} variants={sectionVariant} transition={{ delay: 0.4 }}>
                     {division.members.map((member, index) => (
                         <div 
                             className="each-person"
                             key={index}
-                            onMouseEnter={() => handleMouseEnter(member.role)} 
-                            onMouseLeave={handleMouseLeave}
                         >
                             <div className="image-person">
                                 <img src={member.image} alt={member.name} />
                             </div>
                             <div className="title-person">
                                 <h1>{member.name}</h1>
-                                <p>{member.role}</p>
+                                <p
+                                    onMouseEnter={() => handleMouseEnter(member.role)} 
+                                    onMouseLeave={handleMouseLeave}
+                                    dangerouslySetInnerHTML={{ __html: member.role }}
+                                ></p>
                             </div>
                             {hoveredRole === member.role && division.roleDescriptions && division.roleDescriptions[member.role] && (
                                 <div className="role-popup">
-                                    {division.roleDescriptions[member.role]}
+                                    <p>{division.roleDescriptions[member.role]}</p>
                                 </div>
                             )}
                         </div>
                     ))}
-                </div>
-            </section>
+                </motion.div>
+
+                {renderAdditionalContent()}
+            </motion.section>
         );
     };
 
