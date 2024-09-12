@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import './AnggotaDivisi.scss';
 import { motion } from 'framer-motion';
 
@@ -19,7 +20,23 @@ import stukm from '../../images/stukm.jpeg';
 import { DivisiData } from './DivisiData';
 
 const AnggotaDivisi = ({ activeTab }) => {
+    const navigate = useNavigate();
     const [hoveredRole, setHoveredRole] = useState(null);
+
+    const handleRoleClick = (role) => {
+        const roleToPageMap = {
+            'Spv. UMN Festival 2024': '/umn-festival-2024',
+            'Spv. MAXIMA 2024': '/maxima-2024',
+            'Spv. Mr. & Ms. UMN 2024': '/mr-ms-umn-2024',
+            'Spv. UMN ECO 2024': '/umn-eco-2024',
+            'Spv. OMB UMN 2024': '/omb-umn-2024',
+            'Spv. Starlight UMN 2024': '/starlight-umn-2024',
+        };
+
+        if (roleToPageMap[role]) {
+            navigate(roleToPageMap[role]);
+        }
+    };
 
     const handleMouseEnter = (role) => {
         setHoveredRole(role);
@@ -125,6 +142,7 @@ const AnggotaDivisi = ({ activeTab }) => {
                                     onMouseEnter={() => handleMouseEnter(member.role)} 
                                     onMouseLeave={handleMouseLeave}
                                     dangerouslySetInnerHTML={{ __html: member.role }}
+                                    onClick={() => handleRoleClick(member.role)}
                                 ></p>
                             </div>
                             {hoveredRole === member.role && division.roleDescriptions && division.roleDescriptions[member.role] && (
