@@ -90,7 +90,7 @@ export const DivisiData = {
             "PR Internal 1&nbsp;&nbsp;ⓘ": "Bertanggung jawab dalam mengatur segala bentuk desain dan visualisasi yang bersangkutan dengan publikasi konten pada media sosial BEM UMN.",
             "PR Internal 2&nbsp;&nbsp;ⓘ": "Bertanggung jawab dalam mengatur segala bentuk desain dan visualisasi yang bersangkutan dengan publikasi konten pada media sosial BEM UMN.",
             "PR Eksternal 1&nbsp;&nbsp;ⓘ": "Bertanggung jawab dalam menjalin hubungan kerjasama dengan pihak internal maupun eksternal UMN.",
-            "PR Eksternal 2 ⓘ": "Bertanggung jawab dalam menjalin hubungan kerjasama dengan pihak internal maupun eksternal UMN.",
+            "PR Eksternal 2&nbsp;&nbsp;ⓘ": "Bertanggung jawab dalam menjalin hubungan kerjasama dengan pihak internal maupun eksternal UMN.",
         },
     },
     SUKMA: {
@@ -100,12 +100,12 @@ export const DivisiData = {
         images: [fotosukma, fotosukma2],
         element: elementSUKMA,
         members: [
-            { name: "Alfonsus Given", role: "Spv. UMN Festival 2024", image: alfon },
-            { name: "Katheen Tandi", role: "Spv. Mr. & Ms. UMN 2024", image: kathleen },
-            { name: "Khanza Azzahra", role: "Spv. UMN ECO 2024", image: putrida },
-            { name: "Ralph Theodoric", role: "Spv. OMB UMN 2024", image: ralph },
-            { name: "Rapha Zakharia", role: "Spv. Starlight UMN 2024", image: rapha },
-            { name: "Steven Fernando", role: "Spv. MAXIMA 2024", image: steven },
+            { name: "Alfonsus Given", role: `Spv. <span>UMN Festival 2024</span>`, image: alfon },
+            { name: "Katheen Tandi", role: `Spv. <span>Mr. & Ms. UMN 2024</span>`, image: kathleen },
+            { name: "Khanza Azzahra", role: `Spv. <span>UMN ECO 2024</span>`, image: putrida },
+            { name: "Ralph Theodoric", role: `Spv. <span>OMB UMN 2024</span>`, image: ralph },
+            { name: "Rapha Zakharia", role: `Spv. <span>Starlight UMN 2024</span>`, image: rapha },
+            { name: "Steven Fernando", role: `Spv. <span>MAXIMA 2024</span>`, image: steven },
         ],
     },
     SUFAK: {

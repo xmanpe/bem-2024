@@ -224,6 +224,16 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: normal;
+
+                    span {
+                        text-decoration: underline;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            color: var(--Light-blue, #5AA6DD);
+                        }
+                    }
                 }
             }
 
@@ -240,11 +250,11 @@
                 backdrop-filter: blur(4px);
                 z-index: 10;
                 opacity: 0;
-                transition: all 0.3s ease-in-out;
                 pointer-events: none;
                 width: 100%;
                 max-width: 1000px;
                 text-align: center;
+                transition: all 0.3s ease;
 
                 p {
                     color: #FFF;

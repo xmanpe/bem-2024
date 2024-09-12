@@ -13,10 +13,9 @@
         max-width: 600px;
         width: -webkit-fill-available;
         display: flex;
-        padding: 8px 8px 8px 12px;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        align-self: stretch;
         box-sizing: border-box;
         border-radius: 100px;
         border: 1px solid rgba(0, 0, 0, 0.12);
@@ -24,46 +23,59 @@
         box-shadow: 0px 4px 19.9px 0px rgba(0, 0, 0, 0.07);
         backdrop-filter: blur(14px);
 
-        img {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        .navbar-menu {
+        .top {
             display: flex;
             align-items: center;
+            justify-content: space-between;
+            align-self: stretch;
+            width: -webkit-fill-available;
+            padding: 8px 8px 8px 12px;
 
-            .navbar-each-menu {
+            img {
+                width: 36px;
+                height: 36px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+    
+            .navbar-menu {
                 display: flex;
-                padding: 8px 16px;
-                justify-content: center;
                 align-items: center;
-
-                p {
-                    color: rgba(0, 0, 0, 0.6);
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
+    
+                .navbar-each-menu {
+                    display: flex;
+                    padding: 8px 16px;
+                    justify-content: center;
+                    align-items: center;
+    
+                    p {
+                        color: rgba(0, 0, 0, 0.6);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+    
+                    img {
+                        width: 22px;
+                        height: 22px;
+                    }
                 }
-
-                img {
-                    width: 22px;
-                    height: 22px;
+    
+                .active {
+                    border-radius: 100px;
+                    border: 1px solid var(--Dark-blue, #114D7E);
+                    background: rgba(17, 77, 126, 0.12);
+    
+                    p {
+                        color: var(--Dark-blue, #114D7E);
+                    }
                 }
             }
+        }
 
-            .active {
-                border-radius: 100px;
-                border: 1px solid var(--Dark-blue, #114D7E);
-                background: rgba(17, 77, 126, 0.12);
+        .opened-menu {
 
-                p {
-                    color: var(--Dark-blue, #114D7E);
-                }
-            }
         }
     }
 }

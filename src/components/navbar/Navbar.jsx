@@ -16,18 +16,23 @@ const Navbar = () => {
     return (
         <div className="navbar-overlay">
             <nav className="navbar">
-                <img src={bemLogo} alt="bem logo" onClick={handleLogo} />
-                <div className="navbar-menu">
-                    <div className="navbar-each-menu active">
-                        <p>Beranda</p>
-                    </div>
-                    {/* <div className="navbar-each-menu">
-                        <p>BEMInfo</p>
-                    </div> */}
-                    <div className="navbar-each-menu">
-                        <img src={list} alt="list menu" />
+                <div className="top">
+                    <img src={bemLogo} alt="bem logo" onClick={handleLogo} />
+                    <div className="navbar-menu">
+                        <div className="navbar-each-menu active">
+                            <p>Beranda</p>
+                        </div>
+                        {/* <div className="navbar-each-menu">
+                            <p>BEMInfo</p>
+                        </div> */}
+                        <div className="navbar-each-menu">
+                            <img src={list} alt="list menu" />
+                        </div>
                     </div>
                 </div>
+                {/* <div className="opened-menu">
+                    hai
+                </div> */}
             </nav>
         </div>
     );
