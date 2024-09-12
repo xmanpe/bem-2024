@@ -1,6 +1,6 @@
 import React from "react";
 import './SwiperHeroHome.scss';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel } from 'swiper/modules';
+import { Navigation, Scrollbar, A11y, Autoplay, Mousewheel } from 'swiper/modules';
 
 // import swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
