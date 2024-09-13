@@ -108,9 +108,10 @@ const AnggotaDivisi = ({ activeTab }) => {
                             spaceBetween={16}
                             modules={[Navigation, Autoplay, A11y, Pagination]}
                             slidesPerView={1}
+                            navigation={true}
                             loop={true}
                             pagination={{ clickable: true }}
-                            autoplay={{ delay: 3000, disableOnInteraction: false }}
+                            autoplay={false}
                             className="mySwiper"
                         >
                             {division.images.map((image, index) => (
