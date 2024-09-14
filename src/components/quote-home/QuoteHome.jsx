@@ -17,7 +17,7 @@ const Quote = ({ text, personImg, personName, personJabatan }) => {
                 <p dangerouslySetInnerHTML={{ __html: text }}></p>
                 <div className="quote-person">
                     <div className="quote-image">
-                        <img src={personImg} alt={personName} />
+                        <img loading="lazy" src={personImg} alt={personName} />
                     </div>
                     <div className="status">
                         <p className="person-name">{personName}</p>

@@ -16,7 +16,7 @@ const SaaStukmCard = ({ title, desc, link, imageBackground, activeTab }) => {
             </div>
             {activeTab === 'SUFAK' && (
                 <Button variant="secondary-outline-white" to={link}>
-                    Selengkapnya
+                    Tentang SAA
                 </Button>
             )}
             {activeTab === 'SUKM' && (

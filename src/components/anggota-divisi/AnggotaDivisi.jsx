@@ -135,7 +135,7 @@ const AnggotaDivisi = ({ activeTab }) => {
                             key={index}
                         >
                             <div className="image-person">
-                                <img src={member.image} alt={member.name} />
+                                <img loading="lazy" src={member.image} alt={member.name} />
                             </div>
                             <div className="title-person">
                                 <h1>{member.name}</h1>
