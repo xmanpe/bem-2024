@@ -59,3 +59,67 @@
         box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.10);
     }
 }
+
+@media screen and (max-width: 820px) {
+    .saa-stukm-card {
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+        transition: all 0.3s ease;
+    
+        .text-card {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            
+            h1 {
+                color: var(--Colors-white-white, #FFF);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        
+            p {
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%;
+            }
+        }
+    
+        .button-card {
+            display: flex;
+            padding: 12px 20px;
+            border: 1px solid white;
+            width: fit-content;
+            border-radius: 100px;
+            background: transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+    
+            p {
+                color: var(--Colors-white-white, #FFF);
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+    
+            &:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
+        }
+    
+        &:hover {
+            padding: 24px;
+            box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+        }
+    }
+}

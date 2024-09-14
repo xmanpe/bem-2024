@@ -51,12 +51,12 @@ import dira from '../../images/foto-divisi/sulso/member/dira.jpeg';
 import cia from '../../images/foto-divisi/sulso/member/cia.jpeg';
 
 // Elements
-import elementBPH from '../../images/element/grow.svg';
-import elementPR from '../../images/element/connect.svg';
-import elementSUKMA from '../../images/element/innovate.svg';
-import elementSUFAK from '../../images/element/solid.svg';
-import elementSUKM from '../../images/element/balance.svg';
-import elementSULSO from '../../images/element/continuity.svg';
+import elementBPH from '../../images/element/grow.png';
+import elementPR from '../../images/element/connect.png';
+import elementSUKMA from '../../images/element/innovate.png';
+import elementSUFAK from '../../images/element/solid.png';
+import elementSUKM from '../../images/element/balance.png';
+import elementSULSO from '../../images/element/continuity.png';
 
 export const DivisiData = {
     BPH: {
