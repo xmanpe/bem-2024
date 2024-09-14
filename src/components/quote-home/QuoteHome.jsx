@@ -17,7 +17,7 @@ const Quote = ({ text, personImg, personName, personJabatan }) => {
                 <p dangerouslySetInnerHTML={{ __html: text }}></p>
                 <div className="quote-person">
                     <div className="quote-image">
-                        <img loading="lazy" src={personImg} alt={personName} />
+                        <img src={personImg} alt={personName} />
                     </div>
                     <div className="status">
                         <p className="person-name">{personName}</p>
@@ -36,13 +36,13 @@ const QuoteHome = () => {
                 <Quote 
                     text={`
                         Halo KBM UMN! BEM UMN adalah tempat untuk saling belajar dan berkolaborasi 
-                        untuk meningkatkan potensi diri, softskill, dan hardskill bahkan lebih 
+                        untuk meningkatkan potensi diri, <i>soft skills</i>, dan <i>hard skills</i> bahkan lebih 
                         daripada itu semua. Kami selalu percaya apa yang dikerjakan dengan hati 
-                        akan sampai ke hati juga, dan untuk berjalan ke arah yang lebih baik 
-                        kedepan kami butuh dukungan dari kalian semua untuk bersatu bersama 
+                        akan sampai ke hati. Untuk berjalan ke arah yang lebih baik 
+                        ke depan, kami butuh dukungan dari KBM UMN untuk bersatu bersama 
                         melangkah demi Almamater, Persada, dan Sesama.
                         <br /><br />
-                        Commit. Solid. Integrated
+                        Commit.Solid.Integrated.
                     `}
                     personImg={sherlyImg}
                     personName="Sherly"
@@ -50,10 +50,10 @@ const QuoteHome = () => {
                 />
                 <Quote 
                     text={`
-                        Saat ini, BEM bekerja keras untuk menjadi wadah yang responsif dan inklusif 
-                        bagi seluruh mahasiswa. Ke depan, kami berharap BEM dapat terus berkembang 
+                        Saat ini, BEM UMN bekerja keras untuk menjadi wadah yang responsif dan inklusif 
+                        bagi seluruh mahasiswa. Kami berharap BEM UMN dapat terus berkembang 
                         menjadi organisasi yang lebih kuat, inovatif, dan mampu menciptakan perubahan 
-                        positif di kampus. Bersama-sama, kita berkomitmen untuk terus memperbaiki diri 
+                        positif di kampus kedepannya. Bersama-sama, kita berkomitmen untuk terus memperbaiki diri 
                         dan membawa manfaat yang lebih besar bagi semua.
                         <br /><br />
                         #TogetherWeImproveBetter

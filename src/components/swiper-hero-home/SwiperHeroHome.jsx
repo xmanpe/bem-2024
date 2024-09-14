@@ -13,7 +13,7 @@ import foto2 from '../../images/home/foto-2.jpeg';
 import foto3 from '../../images/home/foto-3.jpeg';
 import foto4 from '../../images/home/foto-4.jpeg';
 import foto5 from '../../images/home/foto-5.jpeg';
-import substract from '../../images/vector/substract.svg';
+import substract from '../../images/vector/substract.png';
 
 const SwiperHeroHome = () => {
     return (

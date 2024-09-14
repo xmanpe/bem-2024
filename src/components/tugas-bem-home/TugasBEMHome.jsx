@@ -5,9 +5,9 @@ import './TugasBEMHome.scss';
 import arrowUp from '../../images/icon/arrow up.svg';
 
 // import logos
-import bemMuda from '../../images/logo/bem muda.svg';
-import bond from '../../images/logo/bond.svg';
-import sharingOrganisator from '../../images/logo/sharing organisator.svg';
+import bemMuda from '../../images/logo/bem muda.png';
+import bond from '../../images/logo/bond.png';
+import sharingOrganisator from '../../images/logo/sharing organisator.png';
 
 // import images
 import maxima from '../../images/sukma/maxima-color.png';

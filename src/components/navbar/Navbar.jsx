@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import './Navbar.scss';
 
 // import images
-import bemLogo from '../../images/logo/bem.svg';
+import bemLogo from '../../images/logo/bem-large.png';
 import list from '../../images/icon/menu.svg'
 
 const Navbar = () => {
