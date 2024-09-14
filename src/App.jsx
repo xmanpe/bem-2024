@@ -30,8 +30,8 @@ const App = () => {
           isOpen={isModalOpen}
           onClose={handleCloseModal}
           title={'<i>Website Under Development</i>'}
-          message={`Website BEM masih dalam tahap awal pengembangan. Beberapa fitur dan informasi mungkin belum berfungsi dengan baik. <br><br>Untuk informasi lebih lengkap, silakan kunjungi Instagram <a href="https://www.instagram.com/bemumn" target="_blank">BEM UMN</a>. Terima kasih.`}
-          buttonText="Siap"
+          message={`Website BEM masih dalam tahap awal pengembangan. Beberapa fitur dan informasi mungkin belum berfungsi dengan baik. <br><br>Untuk informasi lebih lengkap, silakan kunjungi Instagram <a href="https://www.instagram.com/bemumn" target="_blank">BEM UMN</a>.`}
+          buttonText="Baik"
         />
         
       </Router>
