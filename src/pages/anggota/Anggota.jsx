@@ -56,7 +56,7 @@ const Anggota = () => {
                     setActiveTab={setActiveTab} 
                     tabs={tabs} 
                     title={'Anggota'}   
-                    desc={'Kenali anggota yang membentuk BEM UMN GEN XIV menjadi satu kesatuan yang solid.'}
+                    desc={'Kenali anggota BEM UMN GEN XIV yang telah berkomitmen dan berkontribusi dalam periode kepengurusan 2023/2024.'}
                 />
             </motion.div>
             <motion.div variants={itemVariants}>

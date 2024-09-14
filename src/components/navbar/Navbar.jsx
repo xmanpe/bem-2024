@@ -19,9 +19,9 @@ const Navbar = () => {
                 <div className="top">
                     <img src={bemLogo} alt="bem logo" onClick={handleLogo} />
                     <div className="navbar-menu">
-                        <div className="navbar-each-menu active">
+                        {/* <div className="navbar-each-menu active">
                             <p>Beranda</p>
-                        </div>
+                        </div> */}
                         {/* <div className="navbar-each-menu">
                             <p>BEMInfo</p>
                         </div> */}

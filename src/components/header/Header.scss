@@ -42,3 +42,19 @@
         }
     }
 }
+
+@media screen and (max-width: 820px) {
+    .header {    
+        .header-title {
+            margin: 0 16px;
+            
+            h1 {
+                font-size: 36px;
+            }
+    
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
