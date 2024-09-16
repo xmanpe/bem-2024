@@ -42,7 +42,7 @@ const QuoteHome = () => {
                         ke depan, kami butuh dukungan dari KBM UMN untuk bersatu bersama 
                         melangkah demi Almamater, Persada, dan Sesama.
                         <br /><br />
-                        Commit.Solid.Integrated.
+                        Commit. Solid. Integrated.
                     `}
                     personImg={sherlyImg}
                     personName="Sherly"

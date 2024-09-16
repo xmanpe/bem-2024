@@ -25,7 +25,7 @@ const TaglineHome = () => {
                 <img src={solid} alt="solid" />
                 <img src={balance} alt="balance" />
             </div>
-            <p>BEM UMN memiliki tagline organisasi "Commit.Solid.Integrated." yang menegaskan bagaimana setiap anggota harus memiliki komitmen tinggi untuk melaksanakan tanggung jawabnya, solidaritas yang kuat antara sesama anggota, serta mampu berintegrasi dengan naungan serta kemahasiswaan.</p>
+            <p>BEM UMN memiliki tagline organisasi "Commit. Solid. Integrated." yang menegaskan bagaimana setiap anggota harus memiliki komitmen tinggi untuk melaksanakan tanggung jawabnya, solidaritas yang kuat antara sesama anggota, serta mampu berintegrasi dengan naungan serta kemahasiswaan.</p>
         </section>
     );
 }
