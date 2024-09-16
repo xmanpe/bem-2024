@@ -160,7 +160,7 @@ export const DivisiData = {
         ],
         roleDescriptions: {
             "SULSO 1&nbsp;&nbsp;ⓘ": "Bertanggung jawab mengawasi U-Biz, U-Store, dan Rumpin. Selain itu, SULSO 1 juga mengawasi bazaar.",
-            "SULSO 2&nbsp;&nbsp;ⓘ": "Bertanggung jawab mengawasi Duta Anti Narkoba, Kompas Korner, dan UMN Medical Center.",
+            "SULSO 2&nbsp;&nbsp;ⓘ": "Bertanggung jawab mengawasi Duta Anti Narkoba, Kompas Corner, dan UMN Medical Center.",
         },
     },
 };
