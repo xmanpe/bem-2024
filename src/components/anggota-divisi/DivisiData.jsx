@@ -145,7 +145,7 @@ export const DivisiData = {
             "SUKM Seni Budaya 2&nbsp;&nbsp;ⓘ": "Bertanggung jawab mengawasi Mufomic, Obscura, Ulson, USO, dan U-Toys.",
             "SUKM Olahraga 1&nbsp;&nbsp;ⓘ": "Bertanggung jawab mengawasi Capoeira, Fortius, Lions Basketball, Lions Volleyball, dan Spectre.",
             "SUKM Olahraga 2&nbsp;&nbsp;ⓘ": "Bertanggung jawab mengawasi Lions Badminton, Lions Futsal, Taekwondo, dan Tenis Meja.",
-            "SUKM Sains & Sosial&nbsp;&nbsp;ⓘ": "Bertanggung jawab mengawasi GDC, Mapala, Rencang, UESC, dan UMN PC.",
+            "SUKM Sains & Sosial&nbsp;&nbsp;ⓘ": "Bertanggung jawab mengawasi GDC, Mapala, Rencang, Robotic, UESC, dan UMN PC.",
         },
     },
     SULSO: {

@@ -4,9 +4,31 @@ import './Tab.scss';
 
 // import icons
 import arrowDown from '../../images/icon/arrow-down.svg';
+import check from '../../images/icon/check.svg';
 
 const Tab = ({ tabs, activeTab, setActiveTab }) => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const wrapperVariants = {
+        hidden: { 
+            opacity: 0,
+            scale: 0.95,
+            transition: {
+                type: "spring",
+                stiffness: 300,
+                damping: 30
+            }
+        },
+        visible: { 
+            opacity: 1,
+            scale: 1,
+            transition: {
+                type: "spring",
+                stiffness: 300,
+                damping: 30
+            }
+        }
+    };
 
     return (
         <>
@@ -56,22 +78,33 @@ const Tab = ({ tabs, activeTab, setActiveTab }) => {
                     </AnimatePresence>
                     <img src={arrowDown} alt="arrow" className={isOpen ? "open" : ""} />
                 </div>
-                {isOpen && (
-                    <div className="tab-wrapper">
-                        {tabs.map((tab, index) => (
-                            <div
-                                key={index}
-                                className={`each-tab ${activeTab === tab ? "active" : ""}`} 
-                                onClick={() => {
-                                    setActiveTab(tab);
-                                    setIsOpen(false);
-                                }}
-                            >
-                                <p>{tab}</p>
-                            </div>
-                        ))}
-                    </div>
-                )}
+                <AnimatePresence>
+                    {isOpen && (
+                        <motion.div 
+                            className="tab-wrapper"
+                            initial="hidden"
+                            animate="visible"
+                            exit="hidden"
+                            variants={wrapperVariants}
+                        >
+                            {tabs.map((tab, index) => (
+                                <div
+                                    key={index}
+                                    className={`each-tab ${activeTab === tab ? "active" : ""}`} 
+                                    onClick={() => {
+                                        setActiveTab(tab);
+                                        setIsOpen(false);
+                                    }}
+                                >
+                                    <p>{tab}</p>
+                                    {activeTab === tab && (
+                                        <img src={check} alt="selected" />
+                                    )}
+                                </div>
+                            ))}
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </div>
         </>
     );

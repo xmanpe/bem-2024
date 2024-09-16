@@ -10,7 +10,7 @@ const HeroHome = () => {
             <div className="hero-home-title">
                 <div className="title-top">
                     <p>BEM UMN <span>GEN XIV</span></p>
-                    <h1>Commit. Solid. Integrated</h1>
+                    <h1>Commit. Solid. Integrated.</h1>
                 </div>
                 <p>Badan Eksekutif Mahasiswa Universitas Multimedia Nusantara merupakan organisasi kemahasiswaan resmi di tingkat universitas di bawah Rektorat Bidang Kemahasiswaan.</p>
             </div>
