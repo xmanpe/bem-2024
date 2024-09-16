@@ -62,7 +62,7 @@ export const DivisiData = {
     BPH: {
         title: "BPH",
         subtitle: "Badan Pengurus Harian",
-        description: "<span>BPH</span>, merupakan divisi yang bertanggung jawab dalam melakukan koordinasi terkait program kerja, mengawasi kinerja dari masing-masing anggota divisi, serta bertugas dalam pengelolaan keuangan serta hal administratif BEM UMN.",
+        description: "<span>BPH</span> merupakan divisi yang bertanggung jawab dalam melakukan koordinasi terkait program kerja, mengawasi kinerja dari masing-masing anggota divisi, serta bertugas dalam pengelolaan keuangan serta hal administratif BEM UMN.",
         images: [fotobph, fotobph2],
         element: elementBPH,
         members: [
@@ -75,7 +75,7 @@ export const DivisiData = {
     PR: {
         title: "PR",
         subtitle: "<i>Public Relations</i>",
-        description: "<span>PR</span>, merupakan divisi yang bertanggung jawab untuk melakukan publikasi konten, menyebarluaskan informasi-informasi penting pada setiap media komunikasi yang digunakan, serta berperan aktif dalam menjalin hubungan dengan pihak internal maupun eksternal UMN.",
+        description: "<span>PR</span> merupakan divisi yang bertanggung jawab untuk melakukan publikasi konten, menyebarluaskan informasi-informasi penting pada setiap media komunikasi yang digunakan, serta berperan aktif dalam menjalin hubungan dengan pihak internal maupun eksternal UMN.",
         images: [fotopr, fotopr2],
         element: elementPR,
         members: [
@@ -96,7 +96,7 @@ export const DivisiData = {
     SUKMA: {
         title: "SUKMA",
         subtitle: "Supervisor Kegiatan Mahasiswa",
-        description: "<span>SUKMA</span>, bertanggung jawab dalam mengawasi masing-masing Kegiatan Mahasiswa yang dinaungi agar dapat terlaksana sesuai dengan tujuan kegiatannya. SUKMA juga berperan aktif untuk memastikan kinerja dari setiap BPH yang terlibat langsung dalam Kegiatan Mahasiswa agar alur kerja yang terbentuk dapat berjalan dengan baik.",
+        description: "<span>SUKMA</span> bertanggung jawab dalam mengawasi masing-masing Kegiatan Mahasiswa yang dinaungi agar dapat terlaksana sesuai dengan tujuan kegiatannya. SUKMA juga berperan aktif untuk memastikan kinerja dari setiap BPH yang terlibat langsung dalam Kegiatan Mahasiswa agar alur kerja yang terbentuk dapat berjalan dengan baik.",
         images: [fotosukma, fotosukma2],
         element: elementSUKMA,
         members: [
@@ -111,7 +111,7 @@ export const DivisiData = {
     SUFAK: {
         title: "SUFAK",
         subtitle: "Supervisor Fakultas",
-        description: "<span>SUFAK</span>, bertanggung jawab dalam mengawasi, meninjau, dan memastikan kinerja, dari masing-masing himpunan UMN yang dinaunginya, dengan tujuan alur kerja yang dibangun dapat berjalan dengan baik, dan program kerja yang direncanakan dapat terealisasikan sesuai dengan visi misi himpunan maupun UMN.",
+        description: "<span>SUFAK</span> bertanggung jawab dalam mengawasi, meninjau, dan memastikan kinerja, dari masing-masing himpunan UMN yang dinaunginya, dengan tujuan alur kerja yang dibangun dapat berjalan dengan baik, dan program kerja yang direncanakan dapat terealisasikan sesuai dengan visi misi himpunan maupun UMN.",
         images: [fotosufak, fotosufak2],
         element: elementSUFAK,
         members: [
@@ -130,7 +130,7 @@ export const DivisiData = {
     SUKM: {
         title: "SUKM",
         subtitle: "Supervisor Unit Kegiatan Mahasiswa",
-        description: "<span>SUKM</span>, bertanggung jawab dalam mengawasi, meninjau, dan memastikan kinerja, dari masing-masing UKM yang dinaunginya, dengan tujuan alur kerja yang dibangun dapat berjalan dengan baik, dan program kerja yang direncanakan dapat terus berjalan sesuai dengan visi misi UKM maupun UMN.",
+        description: "<span>SUKM</span> bertanggung jawab dalam mengawasi, meninjau, dan memastikan kinerja, dari masing-masing UKM yang dinaunginya, dengan tujuan alur kerja yang dibangun dapat berjalan dengan baik, dan program kerja yang direncanakan dapat terus berjalan sesuai dengan visi misi UKM maupun UMN.",
         images: [fotosukm, fotosukm2],
         element: elementSUKM,
         members: [
@@ -151,7 +151,7 @@ export const DivisiData = {
     SULSO: {
         title: "SULSO",
         subtitle: "Supervisor Lembaga Semi Otonom",
-        description: "<span>SULSO</span>, bertanggung jawab dalam membimbing dan mengawasi kinerja maupun daya cipta dari masing-masing LSO, agar program kerja yang telah ditentukan dapat berjalan dan terlaksana dengan baik.",
+        description: "<span>SULSO</span> bertanggung jawab dalam membimbing dan mengawasi kinerja maupun daya cipta dari masing-masing LSO, agar program kerja yang telah ditentukan dapat berjalan dan terlaksana dengan baik.",
         images: [fotosulso, fotosulso2],
         element: elementSULSO,
         members: [
